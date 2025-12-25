@@ -387,6 +387,17 @@ footer {
     border-radius: 20px;
 }
 
+/* ===== CARD DA ROSA ===== */
+.rose-card {
+    text-align: center;
+    animation: fadeUp 1.2s ease;
+}
+
+.rose-card .highlight {
+    font-size: 1.4rem;
+}
+
+
 /* ===== ANIMAÇÕES ===== */
 @keyframes float {
     0% { transform: translateY(0); }
@@ -676,5 +687,60 @@ footer {
 
     .glass p {
         text-align: center;
+    }
+}
+
+/* ===== HOME RESPONSIVA ===== */
+@media (max-width: 768px) {
+
+    /* Menu */
+    nav ul {
+        gap: 15px;
+        padding: 14px;
+    }
+
+    nav a {
+        font-size: 0.95rem;
+    }
+
+    /* Card especial */
+    .special-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .special-text p {
+        text-align: center;
+    }
+
+    .image-placeholder {
+        width: 180px;
+        height: 180px;
+    }
+
+    /* Cards gerais */
+    .glass {
+        padding: 22px 18px;
+    }
+
+    .glass h1 {
+        font-size: 2rem;
+    }
+
+    .glass h2 {
+        font-size: 1.6rem;
+    }
+
+    /* Destaques */
+    .highlights {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    /* Botões */
+    .btn {
+        width: 100%;
+        max-width: 280px;
     }
 }
