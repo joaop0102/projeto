@@ -424,6 +424,78 @@ footer {
     color: #ffb6c1;
 }
 
+/* ===== RESPONSIVO MOBILE – PÁGINA DE DESCULPAS ===== */
+@media (max-width: 768px) {
+
+    /* Container ocupa melhor a tela */
+    .container {
+        padding: 25px 15px;
+        gap: 25px;
+    }
+
+    /* Cards mais confortáveis */
+    .glass {
+        padding: 22px 18px;
+        max-width: 100%;
+    }
+
+    /* Título principal */
+    .apology-card h1 {
+        font-size: 1.8rem;
+    }
+
+    /* Texto para leitura mobile */
+    .apology-text {
+        font-size: 1.1rem;
+        line-height: 2;
+        text-align: center;
+    }
+
+    .apology-text.highlight {
+        font-size: 1.3rem;
+    }
+
+    /* ÁREA DA MÚSICA (rosa) */
+    .memory-placeholder {
+        width: 220px;
+        height: 220px;
+        margin: 20px auto;
+    }
+
+    /* Dica da música */
+    .music-hint {
+        font-size: 0.85rem;
+        padding: 6px 14px;
+    }
+
+    /* Evita zoom estranho no iOS */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* ===== EXTRA: CELULARES MUITO PEQUENOS ===== */
+@media (max-width: 380px) {
+    .apology-card h1 {
+        font-size: 1.6rem;
+    }
+
+    .apology-text {
+        font-size: 1rem;
+    }
+
+    .apology-text.highlight {
+        font-size: 1.2rem;
+    }
+
+    .memory-placeholder {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+
 /* ===== MEMÓRIA ===== */
 .memory-card {
     text-align: center;
